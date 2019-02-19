@@ -5,7 +5,8 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour
 {
     public float MoveSpeed = 5;
-    public float Gravity = -9.81f;
+    public float Gravity = 9.81f;
+    public float jumpSpeed = 5f;
 
     private CharacterController CC;
     private Vector3 position;
@@ -19,15 +20,20 @@ public class MoveCharacter : MonoBehaviour
     void Update()
     {
         position.z = Input.GetAxis("Horizontal") * MoveSpeed * Time.deltaTime;
-        if (CC.isGrounded)
-        {
-            if (Input.GetKey(KeyCode.Space))
+        position.x = Input.GetAxis("Vertical") * -MoveSpeed * Time.deltaTime;
+        if (CC.isGrounded && Input.GetButton("Jump"))
+        
+            
             {
-                position.y += 100;
+               print("jummp"); 
+               position.y = jumpSpeed;
+               
+                
             }
-        }
+        
+        position.y -= Gravity * Time.deltaTime;
 
-        position.y = Gravity * Time.deltaTime;
+        
         CC.Move(position);
     }
 }
