@@ -19,8 +19,8 @@ public class MoveCharacter : MonoBehaviour
 
     void Update()
     {
-        position.z = Input.GetAxis("Horizontal") * MoveSpeed * Time.deltaTime;
-        position.x = Input.GetAxis("Vertical") * -MoveSpeed * Time.deltaTime;
+        position.x = Input.GetAxis("Horizontal") * MoveSpeed * Time.deltaTime;
+        position.z = Input.GetAxis("Vertical") * MoveSpeed * Time.deltaTime;
         if (CC.isGrounded && Input.GetButton("Jump"))
         
             
