@@ -14,7 +14,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CamerraFollow.cs" t="Include" />
+          <e p="ContinousSpeed.cs" t="Include" />
           <e p="Flip.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="FloatInput.cs" t="Include" />

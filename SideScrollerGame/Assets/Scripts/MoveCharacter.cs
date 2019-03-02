@@ -37,3 +37,8 @@ public class MoveCharacter : MonoBehaviour
         CC.Move(position);
     }
 }
+
+
+
+
+

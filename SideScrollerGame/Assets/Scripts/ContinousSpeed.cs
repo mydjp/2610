@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamerraFollow : MonoBehaviour
+public class ContinousSpeed : MonoBehaviour
 {
-    public Vector3 camPosition;
-    public 
+   
+    
+    
+    
+
+
     
 
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<Rigidbody>().velocity = new Vector3(10,0,0);
     }
 }
