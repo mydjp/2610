@@ -22,7 +22,11 @@
           <e p="MoveCharacter.cs" t="Include" />
           <e p="MovePattern.cs" t="Include" />
           <e p="MovePatternNotGrounded.cs" t="Include" />
+          <e p="ShipCannonBall.cs" t="Include" />
+          <e p="ShipFire.cs" t="Include" />
           <e p="ShipFollow.cs" t="Include" />
+          <e p="Trigger.cs" t="Include" />
+          <e p="TriggerEvent.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
