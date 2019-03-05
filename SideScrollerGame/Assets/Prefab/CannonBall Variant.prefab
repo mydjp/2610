@@ -16,6 +16,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &1884325908579050033
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435639790922829540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0.000000029802322, y: 0, z: -0.000000029802322}
 --- !u!1001 &1435639790922795076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25,7 +38,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 1257b5f2067eeed488056877c7a21c62, type: 3}
       propertyPath: m_Name
-      value: CannonBall
+      value: CannonBall Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1257b5f2067eeed488056877c7a21c62, type: 3}
       propertyPath: m_LocalPosition.x
