@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41037357, g: 0.43462464, b: 0.4432561, a: 1}
+  m_IndirectSpecularColor: {r: 0.41037324, g: 0.43462452, b: 0.44325617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4077,7 +4077,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.039236046, y: 0.014926937, z: -0.0005861907, w: 0.9991183}
+  m_LocalRotation: {x: 0.039236043, y: 0.014926972, z: -0.0005861921, w: 0.9991183}
   m_LocalPosition: {x: -2.3431702, y: 6.17, z: -78.401184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5272,7 +5272,7 @@ Transform:
   m_GameObject: {fileID: 700660858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.73, y: 0.26, z: 0}
-  m_LocalScale: {x: 2.1324778, y: 32.2342, z: 1}
+  m_LocalScale: {x: 2.1324778, y: 4.6662226, z: 1}
   m_Children: []
   m_Father: {fileID: 1200135860}
   m_RootOrder: 1
@@ -5547,7 +5547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: d36f582151465f34e9b6f0473871437d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.36537933
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: d36f582151465f34e9b6f0473871437d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6670,7 +6670,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870914380}
-  m_LocalRotation: {x: 0.039236046, y: 0.014926937, z: -0.0005861907, w: 0.9991183}
+  m_LocalRotation: {x: 0.039236043, y: 0.014926972, z: -0.0005861921, w: 0.9991183}
   m_LocalPosition: {x: -7.000001, y: 6.6473455, z: -26.691187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6792,6 +6792,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &909045848 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400016, guid: d36f582151465f34e9b6f0473871437d,
+    type: 3}
+  m_PrefabInstance: {fileID: 718563173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &909479685 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100016, guid: e1e5b75e4e1f1a2449af9097a146f315,
@@ -8542,6 +8548,7 @@ GameObject:
   - component: {fileID: 1200135860}
   - component: {fileID: 1200135862}
   - component: {fileID: 1200135861}
+  - component: {fileID: 1200135863}
   m_Layer: 0
   m_Name: Kraken
   m_TagString: Untagged
@@ -8562,7 +8569,6 @@ Transform:
   m_Children:
   - {fileID: 398485805}
   - {fileID: 700660859}
-  - {fileID: 1597080261}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8595,6 +8601,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+--- !u!114 &1200135863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200135859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626ce244b1ecdf14c811f24ea1f7dc39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 922637287}
+  Kraken: {fileID: 1200135859}
+  YPosition: 0
+  TTime: 0.5
 --- !u!1 &1209363007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: e1e5b75e4e1f1a2449af9097a146f315,
@@ -11827,12 +11849,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597080260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.33, y: 0.76, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.01654898, y: -0.9998631, z: -0, w: 0}
+  m_LocalPosition: {x: -4.02, y: 0.13, z: 0}
+  m_LocalScale: {x: 0.22148003, y: 0.22147997, z: 0.22148}
   m_Children: []
-  m_Father: {fileID: 1200135860}
-  m_RootOrder: 2
+  m_Father: {fileID: 909045848}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1597080262
 BoxCollider:
