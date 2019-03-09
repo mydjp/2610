@@ -1,14 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
 
 public class BulletKill : MonoBehaviour
 {
+   
+   
+   
+   
+   
    public void OnTriggerEnter(Collider obj)
    {
-      if(obj.gameObject.CompareTag("Bullet"))
+      if(obj.gameObject.CompareTag("Player"))
       {
-         Destroy(gameObject);
+         SceneManager.LoadScene("Scenes/SideScroller");
       }
    }
 }

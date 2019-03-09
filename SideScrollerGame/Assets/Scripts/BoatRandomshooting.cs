@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Timers;
 using UnityEngine;
 
-public class RandomCannonShoot : MonoBehaviour 
-
+public class BoatRandomshooting : MonoBehaviour
 {
+    
     public Rigidbody projectile;
     public Transform Spawnpoint;
 
@@ -18,7 +17,7 @@ public class RandomCannonShoot : MonoBehaviour
 // Use this for initialization
     void Start () 
     {
-            InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
+        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
     }
 
 
@@ -29,7 +28,7 @@ public class RandomCannonShoot : MonoBehaviour
         Rigidbody clone;
         clone = (Rigidbody)Instantiate(projectile, Spawnpoint.position, projectile.rotation);
 
-        clone.velocity = Spawnpoint.TransformDirection (Vector3.forward*20);
+        clone.velocity = Spawnpoint.TransformDirection (Vector3.forward*57);
         if (stopSpawing)
         {
             CancelInvoke("SpawnObject");
@@ -37,14 +36,4 @@ public class RandomCannonShoot : MonoBehaviour
         
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
