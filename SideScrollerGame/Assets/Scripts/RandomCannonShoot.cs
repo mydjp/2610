@@ -13,6 +13,8 @@ public class RandomCannonShoot : MonoBehaviour
 
     public float spawnTime;
     public float spawnDelay;
+
+    public float speed;
     
 
 // Use this for initialization
@@ -29,7 +31,7 @@ public class RandomCannonShoot : MonoBehaviour
         Rigidbody clone;
         clone = (Rigidbody)Instantiate(projectile, Spawnpoint.position, projectile.rotation);
 
-        clone.velocity = Spawnpoint.TransformDirection (Vector3.forward*20);
+        clone.velocity = Spawnpoint.TransformDirection (Vector3.forward*speed);
         if (stopSpawing)
         {
             CancelInvoke("SpawnObject");

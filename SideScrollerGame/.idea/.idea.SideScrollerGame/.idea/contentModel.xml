@@ -19,6 +19,7 @@
           <e p="BulletKill.cs" t="Include" />
           <e p="CannonTracking.cs" t="Include" />
           <e p="ContinousSpeed.cs" t="Include" />
+          <e p="DestroyAfterTime.cs" t="Include" />
           <e p="DoubleClick.cs" t="Include" />
           <e p="Flip.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
